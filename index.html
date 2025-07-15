@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>컴펫홈</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- 네비게이션 -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <h1 class="logo">컴펫홈</h1>
+
+        <button class="menu-toggle" aria-label="메뉴 열기">
+          ☰
+        </button>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#about">서비스 소개</a></li>
+            <li><a href="#template">템플릿 다운로드</a></li>
+            <li><a href="#download">앱 다운로드</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <!-- Hero Section -->
+    <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+        <h2>기억보다 소중한 기록</h2>
+        <p>컴펫홈과 함께 하세요</p>
+        <div class="store-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.mcb.compethome&hl=ko" target="_blank">
+            <img src="/icon/googleplay.svg" alt="Google Play 다운로드" />
+          </a>
+          <a href="https://apps.apple.com/kr/app/%EC%BB%B4%ED%8E%AB%ED%99%88/id6529525379" target="_blank">
+            <img src="/icon/appstore.svg" alt="App Store 다운로드" />
+          </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+  <!-- WHY section -->
+    <section class="why-section" id="about">
+    <div class="container">
+        <div class="why-header">
+        <h2>왜 반려동물의 일상을 기록해야 할까요?</h2>
+        <p>
+            컴펫홈은 기록을 통해 변화의 흐름을 포착하고<br />
+            필요한 순간에 반려동물의 변화를 알아차릴 수 있도록 도와줍니다.
+        </p>
+        </div>
+
+        <div class="why-cards">
+        <div class="why-card">
+            <div class="icon-wrapper">
+            <img src="/icon/Icon_1.png" alt="밥을 남기기 시작할 때" />
+            </div>
+            <h3>밥을 남기기 시작할 때</h3>
+            <p>식사량이나 식사 패턴의 변화는 이상 신호일 수 있어요</p>
+        </div>
+        <div class="why-card">
+            <div class="icon-wrapper">
+            <img src="/icon/Icon_2.png" alt="배변 상태가 변화할 때" />
+            </div>
+            <h3>배변 상태가 변화할 때</h3>
+            <p>배변/소변 상태는 아주 중요한 건강 지표예요</p>
+        </div>
+        <div class="why-card">
+            <div class="icon-wrapper">
+            <img src="/icon/Icon_3.png" alt="산책을 싫어하거나 지칠 때" />
+            </div>
+            <h3>산책을 싫어하거나 지칠 때</h3>
+            <p>통증이 있거나, 반려동물의 질병의 징조일 수도 있어요</p>
+        </div>
+        <div class="why-card">
+            <div class="icon-wrapper">
+            <img src="/icon/Icon_4.png" alt="기록을 모으면 흐름이 보여요" />
+            </div>
+            <h3>기록을 모으면 흐름이 보여요</h3>
+            <p>최근 경향을 수의사에게 설명할 수 있어요</p>
+        </div>
+        </div>
+    </div>
+    </section>
+            
+
+    <!--carousel-section-->
+    <section class="carousel-section">
+    <div class="container">
+        <div class="carousel-header">
+        <h2>컴펫홈과 함께하는 일상</h2>
+        <p>컴펫홈과 함께하면, 우리의 일상이 어떻게 달라질까요?</p>
+        </div>
+
+        <div class="carousel-container">
+        <div class="carousel-track">
+            <img src="/carousel/Web_1.svg" alt="슬라이드 1" />
+            <img src="/carousel/Web_2.svg" alt="슬라이드 2" />
+            <img src="/carousel/Web_3.svg" alt="슬라이드 3" />
+            <img src="/carousel/Web_4.svg" alt="슬라이드 4" />
+            <img src="/carousel/Web_5.svg" alt="슬라이드 5" />
+        </div>
+        <button class="arrow left">&#10094;</button>
+        <button class="arrow right">&#10095;</button>
+        <div class="carousel-dots"></div>
+        </div>
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Plus Section-->
+
+    <section class="plus-section" id="template">
+  <div class="container">
+    <p class="plus-label">+ PLUS</p>
+    <h2 class="plus-title">기존 수첩도, 엑셀 기록도 쉽게 정리할 수 있어요</h2>
+    <ul class="plus-benefits">
+      <li>✓ 엑셀 업로드/다운로드 템플릿 제공</li>
+      <li>✓ 기록 내보내기 & 백업도 가능</li>
+      <li>✓ 수기로 썼던 기록도 템플릿을 이용하면 쉽게 옮길 수 있어요</li>
+    </ul>
+    <div class="plus-buttons">
+      <a class="plus-btn" href="/template/health-template.xlsx" download>
+        <i class="fas fa-file-excel"></i>
+        건강기록 양식 다운로드
+        <i class="fas fa-download"></i>
+      </a>
+      <a class="plus-btn" href="/template/budget-template.xlsx" download>
+        <i class="fas fa-file-excel"></i>
+        가계부 양식 다운로드
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+    <p class="plus-note">
+      *템플릿은 다운로드한 후 빈 양식에 엑셀 작업을 하여 업로드하면 사용하실 수 있습니다.
+    </p>
+  </div>
+</section>
+
+
+<!--Download Section-->
+    <section class="download-section" id="download">
+  <div class="container">
+    <div class="download-content">
+      <div class="download-text">
+        <p class="subtext">우리는 반려동물의 삶을 조금 더 잘 이해할 수 있도록<br>기록이라는 방식을 제안합니다.</p>
+        <h2>지금 컴펫홈을 다운로드하세요</h2>
+        <div class="store-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.mcb.compethome&hl=ko" target="_blank">
+            <img src="/icon/googleplay.svg" alt="Google Play 다운로드" />
+          </a>
+          <a href="https://apps.apple.com/kr/app/%EC%BB%B4%ED%8E%AB%ED%99%88/id6529525379" target="_blank">
+            <img src="/icon/appstore.svg" alt="App Store 다운로드" />
+          </a>
+        </div>
+      </div>
+      <div class="download-image">
+        <img src="/image/Download_Image.png" alt="컴펫홈 다운로드 이미지" />
+    </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-top">
+        <h2 class="footer-brand">COMEPETHOME</h2>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@comepethome" target="_blank" rel="noopener">
+            <img src="/icon/youtube-icon.svg" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/come_pet_home/" target="_blank" rel="noopener">
+            <img src="/icon/instagram-icon.svg" alt="Instagram" />
+          </a>
+          <a href="https://blog.naver.com/comepethome" target="_blank" rel="noopener">
+            <img src="/icon/blog-icon.svg" alt="Blog" />
+          </a>
+          <a href="http://pf.kakao.com/_GFazn" target="_blank" rel="noopener">
+            <img src="/icon/kakao-icon.svg" alt="Kakao" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p class="footer-slogan">
+          기억보다 소중한 기록, 컴펫홈과 함께하세요.<br />
+          <span class="en">Preserve what matters more than memory, with Compethome.</span>
+        </p>
+        <div class="footer-contact">
+          <div class="contact-left">
+            <p>come.pet.home@mcbglobal.pro</p>
+            <p>070-8880-0307</p>
+          </div>
+          <div class="contact-right">
+            <p>서울 금천구 가산디지털1로 225</p>
+            <p>에이스 가산 포휴 11층 (우:08501)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>MCB Global Consulting ⓒ 2025 All Rights Reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
