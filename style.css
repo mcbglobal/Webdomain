@@ -417,6 +417,7 @@ margin-top: 80px;
 
 /*Carousel - Section*/
 
+/* 기본 세팅 */
 * {
   margin: 0;
   padding: 0;
@@ -440,20 +441,26 @@ margin-top: 80px;
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%;
 }
 
-.carousel-track img {
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
   width: 100%;
   height: auto;
-  flex-shrink: 0;
+  display: block;
 }
 
+/* 화살표 */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   font-size: 2rem;
   cursor: pointer;
@@ -461,20 +468,19 @@ margin-top: 80px;
   padding: 0.5rem 1rem;
   border-radius: 50%;
 }
-
 .arrow.left {
   left: 10px;
 }
-
 .arrow.right {
   right: 10px;
 }
 
+/* 점 네비게이션 */
 .carousel-dots {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
-
 .carousel-dots button {
   width: 10px;
   height: 10px;
@@ -483,128 +489,68 @@ margin-top: 80px;
   border: none;
   background-color: #ccc;
   cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 80px;
 }
-
 .carousel-dots .active {
   background-color: #333;
 }
 
-
+/* 헤더 */
 .carousel-header {
   text-align: center;
   margin-bottom: 64px;
 }
-
 .carousel-header h2 {
   color: #222;
-  text-align: center;
   font-size: 42px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 54.6px */
+  line-height: 130%;
   letter-spacing: -1.26px;
   margin-bottom: 10px;
 }
-
 .carousel-header p {
   color: #424242;
-  text-align: center;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 180%; /* 32.4px */
+  line-height: 180%;
   letter-spacing: -0.54px;
 }
 
-/* 태블릿 대응 이미지 */
+/* 반응형 이미지 교체 - 태블릿 */
 @media (max-width: 810px) {
-  .carousel-track img {
+  .carousel-slide:nth-child(1) img {
     content: url("carousel/Mobile_1.svg");
   }
-
-  .carousel-track img:nth-child(2) {
+  .carousel-slide:nth-child(2) img {
     content: url("carousel/Mobile_2.svg");
   }
-
-  .carousel-track img:nth-child(3) {
+  .carousel-slide:nth-child(3) img {
     content: url("carousel/Mobile_3.svg");
   }
-
-  .carousel-track img:nth-child(4) {
+  .carousel-slide:nth-child(4) img {
     content: url("carousel/Mobile_4.svg");
   }
-
-  .carousel-track img:nth-child(5) {
+  .carousel-slide:nth-child(5) img {
     content: url("carousel/Mobile_5.svg");
   }
 
   .carousel-header h2 {
-  color: #222;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%; /* 54.6px */
-  letter-spacing: -1.26px;
-  margin-bottom: 10px;
+    font-size: 36px;
+  }
+  .carousel-header p {
+    font-size: 22px;
+  }
 }
 
-.carousel-header p {
-  color: #424242;
-  text-align: center;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 180%; /* 32.4px */
-  letter-spacing: -0.54px;
-}
-}
-
-
+/* 반응형 텍스트 - 모바일 */
 @media (max-width: 390px) {
-  .carousel-track img {
-    content: url("/carousel/Mobile_1.svg");
-  }
-
-  .carousel-track img:nth-child(2) {
-    content: url("/carousel/Mobile_2.svg");
-  }
-
-  .carousel-track img:nth-child(3) {
-    content: url("/carousel/Mobile_3.svg");
-  }
-
-  .carousel-track img:nth-child(4) {
-    content: url("/carousel/Mobile_4.svg");
-  }
-
-  .carousel-track img:nth-child(5) {
-    content: url("/carousel/Mobile_5.svg");
-  }
-
   .carousel-header h2 {
-  color: #222;
-  text-align: center;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%; /* 54.6px */
-  letter-spacing: -1.26px;
-  margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .carousel-header p {
+    font-size: 18px;
+  }
 }
 
-.carousel-header p {
-  color: #424242;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 180%; /* 32.4px */
-  letter-spacing: -0.54px;
-}
-}
 
 
 
