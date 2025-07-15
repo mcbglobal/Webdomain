@@ -417,7 +417,6 @@ margin-top: 80px;
 
 /*Carousel - Section*/
 
-/* 기본 세팅 */
 * {
   margin: 0;
   padding: 0;
@@ -441,18 +440,21 @@ margin-top: 80px;
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .carousel-slide {
   flex: 0 0 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-slide img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* 화살표 */
@@ -468,19 +470,22 @@ margin-top: 80px;
   padding: 0.5rem 1rem;
   border-radius: 50%;
 }
+
 .arrow.left {
   left: 10px;
 }
+
 .arrow.right {
   right: 10px;
 }
 
-/* 점 네비게이션 */
+/* 도트 */
 .carousel-dots {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
 }
+
 .carousel-dots button {
   width: 10px;
   height: 10px;
@@ -490,6 +495,7 @@ margin-top: 80px;
   background-color: #ccc;
   cursor: pointer;
 }
+
 .carousel-dots .active {
   background-color: #333;
 }
@@ -499,6 +505,7 @@ margin-top: 80px;
   text-align: center;
   margin-bottom: 64px;
 }
+
 .carousel-header h2 {
   color: #222;
   font-size: 42px;
@@ -507,6 +514,7 @@ margin-top: 80px;
   letter-spacing: -1.26px;
   margin-bottom: 10px;
 }
+
 .carousel-header p {
   color: #424242;
   font-size: 24px;
@@ -515,42 +523,56 @@ margin-top: 80px;
   letter-spacing: -0.54px;
 }
 
-/* 반응형 이미지 교체 - 태블릿 */
+/* ---------- 반응형 ---------- */
+
 @media (max-width: 810px) {
   .carousel-slide:nth-child(1) img {
     content: url("carousel/Mobile_1.svg");
   }
+
   .carousel-slide:nth-child(2) img {
     content: url("carousel/Mobile_2.svg");
   }
+
   .carousel-slide:nth-child(3) img {
     content: url("carousel/Mobile_3.svg");
   }
+
   .carousel-slide:nth-child(4) img {
     content: url("carousel/Mobile_4.svg");
   }
+
   .carousel-slide:nth-child(5) img {
     content: url("carousel/Mobile_5.svg");
+  }
+
+  .carousel-slide img {
+    width: auto;
+    max-width: 90%;
   }
 
   .carousel-header h2 {
     font-size: 36px;
   }
+
   .carousel-header p {
     font-size: 22px;
   }
 }
 
-/* 반응형 텍스트 - 모바일 */
 @media (max-width: 390px) {
+  .carousel-slide img {
+    max-width: 100%;
+  }
+
   .carousel-header h2 {
     font-size: 28px;
   }
+
   .carousel-header p {
     font-size: 18px;
   }
 }
-
 
 
 

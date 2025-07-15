@@ -1,3 +1,4 @@
+// 요소 선택
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
 const leftButton = document.querySelector(".arrow.left");
@@ -7,17 +8,13 @@ const dotsContainer = document.querySelector(".carousel-dots");
 let currentIndex = 0;
 let slideWidth = slides[0].getBoundingClientRect().width;
 
-
-
-
-// 슬라이드 정렬
+// 슬라이드 위치 설정
 const setSlidePosition = () => {
+  slideWidth = slides[0].getBoundingClientRect().width;
   slides.forEach((slide, index) => {
-    slide.style.left = slideWidth * index + "px";
+    slide.style.left = `${slideWidth * index}px`;
   });
 };
-
-setSlidePosition();
 
 // 이동 함수
 const moveToSlide = (index) => {
@@ -26,7 +23,7 @@ const moveToSlide = (index) => {
   updateDots();
 };
 
-// 화살표
+// 좌우 화살표
 rightButton.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % slides.length;
   moveToSlide(currentIndex);
@@ -37,7 +34,7 @@ leftButton.addEventListener("click", () => {
   moveToSlide(currentIndex);
 });
 
-// 인디케이터
+// 도트 생성 및 기능
 slides.forEach((_, i) => {
   const dot = document.createElement("button");
   dot.addEventListener("click", () => moveToSlide(i));
@@ -50,15 +47,13 @@ const updateDots = () => {
   });
 };
 
-updateDots();
-
-// 자동 전환
-setInterval(() => {
+// 자동 전환 (5초)
+let autoSlide = setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   moveToSlide(currentIndex);
 }, 5000);
 
-// 스와이프 (모바일)
+// 스와이프 대응 (모바일)
 let startX = 0;
 
 track.addEventListener("touchstart", (e) => {
@@ -75,3 +70,13 @@ track.addEventListener("touchend", (e) => {
     rightButton.click();
   }
 });
+
+// 윈도우 리사이즈 시 다시 계산
+window.addEventListener("resize", () => {
+  setSlidePosition();
+  moveToSlide(currentIndex); // 현재 슬라이드 유지
+});
+
+// 초기 실행
+setSlidePosition();
+moveToSlide(currentIndex);
