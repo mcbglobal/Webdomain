@@ -20,7 +20,7 @@ body {
 /* ========== HERO SECTION ========== */
 .hero {
   height: 100vh;
-  background: url('/image/HeroImage.png') no-repeat center center / cover;
+  background: url('./image/HeroImage.png') no-repeat center center / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -521,23 +521,23 @@ margin-top: 80px;
 /* 태블릿 대응 이미지 */
 @media (max-width: 810px) {
   .carousel-track img {
-    content: url("/carousel/Mobile_1.svg");
+    content: url("./carousel/Mobile_1.svg");
   }
 
   .carousel-track img:nth-child(2) {
-    content: url("/carousel/Mobile_2.svg");
+    content: url("./carousel/Mobile_2.svg");
   }
 
   .carousel-track img:nth-child(3) {
-    content: url("/carousel/Mobile_3.svg");
+    content: url("./carousel/Mobile_3.svg");
   }
 
   .carousel-track img:nth-child(4) {
-    content: url("/carousel/Mobile_4.svg");
+    content: url("./carousel/Mobile_4.svg");
   }
 
   .carousel-track img:nth-child(5) {
-    content: url("/carousel/Mobile_5.svg");
+    content: url("./carousel/Mobile_5.svg");
   }
 
   .carousel-header h2 {
