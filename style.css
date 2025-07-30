@@ -832,7 +832,7 @@ margin-top: 80px;
   }
 
   .download-text .subtext {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -898,7 +898,7 @@ margin-top: 80px;
   flex: 1 1 100%;
   margin: 20px 0;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -925,6 +925,28 @@ margin-top: 80px;
 
 .footer-info {
   margin-top: 40px; /* ✅ 소셜과 아래 간격 확보 */
+}
+
+.footer-bottom-buttons {
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-bottom-buttons a {
+  color: #fff;         
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 0;          /* 링크들 사이 margin 제거 */
+}
+.footer-bottom-buttons a:hover {
+  color: #aaa;
+  text-decoration: underline;
+}
+.footer-bottom-buttons .divider {
+  color: #aaa;
+  margin: 0 10px;     /* 링크 사이만 여백 */
 }
 
 

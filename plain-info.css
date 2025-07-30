@@ -1,0 +1,68 @@
+body {
+  background: #fff;
+  color: #212121;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.page-info {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background: #fff;
+}
+
+.info-inner {
+  width: 680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 이하 동일, 위에서 안내드린 스타일 그대로! */
+h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222;
+  margin-bottom: 32px;
+  text-align: left;
+}
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-bottom: 36px;
+}
+section {
+  margin-bottom: 34px;
+}
+section h2 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+section p {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+ul {
+  margin-left: 18px;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+li {
+  margin-bottom: 7px;
+}
+a {
+  color: #1966c1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+strong {
+  font-weight: bold;
+  color: #164ad5;
+}
